@@ -85,11 +85,8 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["MY_APP_DATABASE_URL"] %>
   database: url_shortner_production
   username: arun
   password: qwer
   host: localhost
   port: 5432
-
-  MY_APP_DATABASE_URL: "postgres://myuser:arun@localhost/url_shortner_production"
