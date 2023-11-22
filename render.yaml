@@ -1,0 +1,18 @@
+databases:
+  - name: url_shortner
+    databaseName: url_shortner
+    user: url_shortner
+
+services:
+  - type: web
+    name: url_shortner
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: url_shortner
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
