@@ -1,7 +1,12 @@
 databases:
-  - name: url_shortner_production
-    databaseName: url_shortner_production
-    user: arun
+  - adapter: postgresql
+    encoding: unicode
+    pool: 5
+    database: url_shortner_production
+    username: arun
+    password: qwer
+    host:  127.0.0.1
+    port: 5432
 
 services:
   - type: web
