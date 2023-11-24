@@ -16,7 +16,7 @@ services:
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
+        fromDatabase: url_shortner_production
           name: url_shortner_production
           property: connectionString
       - key: RAILS_MASTER_KEY
