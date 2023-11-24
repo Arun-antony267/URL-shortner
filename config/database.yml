@@ -23,34 +23,35 @@ default: &default
 
 development:
   <<: *default
-  database: url_shortner_development
-  url: <%= ENV["DATABASE_URL"] %>
-  # The specified database role being used to connect to postgres.
-  # To create additional roles in postgres see `$ createuser --help`.
-  # When left blank, postgres will use the default role. This is
-  # the same name as the operating system user running Rails.
-  username: arun
+  url: postgresql://arun@localhost:5432/url_shortner_development?pool=5
+  # database: url_shortner_development
+  # url: <%= ENV["DATABASE_URL"] %>
+  # # The specified database role being used to connect to postgres.
+  # # To create additional roles in postgres see `$ createuser --help`.
+  # # When left blank, postgres will use the default role. This is
+  # # the same name as the operating system user running Rails.
+  # username: arun
 
-  # The password associated with the postgres role (username).
-  # password: asdf
+  # # The password associated with the postgres role (username).
+  # # password: asdf
 
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
-  host: localhost
+  # # Connect on a TCP socket. Omitted by default since the client uses a
+  # # domain socket that doesn't need configuration. Windows does not have
+  # # domain sockets, so uncomment these lines.
+  # host: localhost
 
-  # The TCP port the server listens on. Defaults to 5432.
-  # If your server runs on a different port number, change accordingly.
-  port: 5432
+  # # The TCP port the server listens on. Defaults to 5432.
+  # # If your server runs on a different port number, change accordingly.
+  # port: 5432
 
-  # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+  # # Schema search path. The server defaults to $user,public
+  # #schema_search_path: myapp,sharedapp,public
 
-  # Minimum log levels, in increasing order:
-  #   debug5, debug4, debug3, debug2, debug1,
-  #   log, notice, warning, error, fatal, and panic
-  # Defaults to warning.
-  #min_messages: notice
+  # # Minimum log levels, in increasing order:
+  # #   debug5, debug4, debug3, debug2, debug1,
+  # #   log, notice, warning, error, fatal, and panic
+  # # Defaults to warning.
+  # #min_messages: notice
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -85,6 +86,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  statement_limit: 200
   url: <%= ENV["DATABASE_URL"] %>
   database: url_shortner_production
   username: arun
