@@ -10,7 +10,7 @@ end
 
 def urlCount
 
-  @count = ShortUrl.count
+  @count = short_url.count
   render json:  @count
 end
 
