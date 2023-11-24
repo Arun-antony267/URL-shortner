@@ -1,70 +1,4 @@
 {
-  "RSpec": {
-    "coverage": {
-      "/home/arun/URL-shortner/spec/support/factory_bot.rb": [
-        null,
-        null,
-        null
-      ],
-      "/home/arun/URL-shortner/spec/helpers/user_helper_spec.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ]
-    },
-    "timestamp": 1700631653
-  },
   "Unknown Test Framework": {
     "coverage": {
       "/home/arun/URL-shortner/app/controllers/application_controller.rb": [
@@ -642,61 +576,16 @@
         0
       ]
     },
-    "timestamp": 1700650947
+    "timestamp": 1700803062
   },
-  "Unit Tests": {
+  "RSpec": {
     "coverage": {
-      "/home/arun/Desktop/url_shortner/spec/helpers/home_helper_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
+      "/home/arun/URL-shortner/spec/support/factory_bot.rb": [
         null,
         null,
         null
       ],
-      "/home/arun/Desktop/url_shortner/spec/helpers/user_helper_spec.rb": [
+      "/home/arun/URL-shortner/spec/helpers/user_helper_spec.rb": [
         1,
         null,
         null,
@@ -753,6 +642,6 @@
         null
       ]
     },
-    "timestamp": 1700561728
+    "timestamp": 1700803066
   }
 }

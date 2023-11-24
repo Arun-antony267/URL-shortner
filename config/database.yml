@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: url_shortner_development
-
+  url: <%= ENV["DATABASE_URL"] %>
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -32,12 +32,12 @@ development:
   username: arun
 
   # The password associated with the postgres role (username).
-  password: qwer
+  password: asdf
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: 127.0.0.1
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -59,8 +59,8 @@ test:
   <<: *default
   database: url_shortner_test
   username: arun
-  password: qwer
-  host: 127.0.0.1
+  password: asdf
+  host: localhost
   port: 5432
   
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -70,7 +70,7 @@ test:
 # Instead, provide the password or a full connection URL as an environment
 # variable when you boot the app. For example:
 #
-# DATABASE_URL: "postgres://myuser:arun@localhost/url_shortner_production"
+  DATABASE_URL: "postgresql://arun:asdf@localhost:5432/url_shortner_production"
 #
 # If the connection URL is provided in the special DATABASE_URL environment
 # variable, Rails will automatically merge its configuration values on top of
@@ -85,8 +85,9 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: url_shortner_production
   username: arun
-  password: qwer
-  host: 127.0.0.1
+  password: asdf
+  host: localhost
   port: 5432

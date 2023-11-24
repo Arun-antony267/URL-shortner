@@ -1,7 +1,12 @@
 databases:
-  - name: url_shortner_production
-    databaseName: url_shortner_production
-    user: arun
+  - adapter: postgresql
+    encoding: unicode
+    pool: 5
+    database: url_shortner_production
+    username: arun
+    password: qwer
+    host:  127.0.0.1
+    port: 5432
 
 services:
   - type: web
@@ -11,7 +16,7 @@ services:
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
+        fromDatabase: url_shortner_production
           name: url_shortner_production
           property: connectionString
       - key: RAILS_MASTER_KEY
