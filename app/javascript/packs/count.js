@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function MyComponent(){
   
-  const url= "home/urlCount";
+  const url= "https://rails-test-deploy-url-shortner.onrender.com//urlCount";
   const [data, setData] = useState();
   
   const fetchInfo = () => {
