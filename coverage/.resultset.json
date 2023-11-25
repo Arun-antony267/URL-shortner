@@ -38,12 +38,10 @@
         null,
         0,
         null,
-        null,
         0,
         null,
         null,
         0,
-        null,
         0,
         0,
         0,
@@ -576,7 +574,7 @@
         0
       ]
     },
-    "timestamp": 1700827801
+    "timestamp": 1700905475
   },
   "RSpec": {
     "coverage": {
@@ -640,8 +638,27 @@
         null,
         null,
         null
+      ],
+      "/home/arun/URL-shortner/app/models/user.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/arun/URL-shortner/app/models/application_record.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1700803484
+    "timestamp": 1700905525
   }
 }
