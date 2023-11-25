@@ -3,14 +3,12 @@ class HomeController < ApplicationController
 def index
 
   $short_count = ShortUrl.count 
-  
- 
+
 end
 
 
 def urlCount
-
-  @count = short_url.count
+  @count = ShortUrl.count
   render json:  @count
 end
 
