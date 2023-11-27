@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function MyComponent(){
   
-  const url= "https://rails-test-deploy-url-shortner.onrender.com/urlCount";
+  const url= "/urlCount";
   const [data, setData] = useState();
   
   const fetchInfo = () => {
@@ -18,7 +18,7 @@ function MyComponent(){
   return(
       <div className='p'>
         <div className='box box-outline '>
-        <p> The Number Of URL's Shortened is : {data}</p>
+        <p> The Number Of URL's Shortened is :{data}</p>
         </div>
       </div>
   )
