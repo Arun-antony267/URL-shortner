@@ -74,29 +74,29 @@ end
   end 
 
 
-def next
-  $size = $size - 1;
-$original_url = $after[$size]
-  if $size!= -1 
-      if $original_url.present?
-         if $original_url =~ /\A#{URI::regexp([ 'http', 'https'])}\z/
-           @reply = 'valid url'
-           @array = $original_url
-           redirect_to :action => 'lookup_code'
-    
-           else
-            flash[:message] = 'Invalid url'
-           render 'new'
+  def next
+    $size = $size - 1;
+    $original_url = $after[$size]
+      if $size!= -1 
+          if $original_url.present?
+             if $original_url =~ /\A#{URI::regexp([ 'http', 'https'])}\z/
+               @reply = 'valid url'
+               @array = $original_url
+               redirect_to :action => 'lookup_code'
+        
+               else
+                flash[:message] = 'Invalid url'
+               render 'new'
+              end
+              @reply = 'Invalid url' 
+         
           end
-          @reply = 'Invalid url' 
-     
+          else
+          flash[:message] = 'No More url'
+           render 'new'
+       
       end
-      else
-      flash[:message] = 'No More url'
-       render 'new'
-   
-  end
-end
+    end
 
 
 
@@ -147,15 +147,15 @@ end
     
     def ogurl
 
-      @original_url = $original_url.to_json
-      render json: @original_url
+      # @original_url = $original_url.to_json
+      render json: $original_url.to_json
         
     end
 
     def srtUrl
     
-      @shortened_url = $shortened_url.to_json
-      render json: @shortened_url
+      # @shortened_url = $shortened_url.to_json
+      render json: $shortened_url.to_json
 
     end
 
