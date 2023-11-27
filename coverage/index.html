@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-27T12:02:14+05:30">2023-11-27T12:02:14+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-27T14:03:46+05:30">2023-11-27T14:03:46+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -93,7 +93,7 @@
       <tr>
         <td class="strong"><a href="#88d46cf920582297284aecd6368315cdf9656189" class="src_link" title="app/controllers/redirect_controller.rb">app/controllers/redirect_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>14</td>
+        <td>11</td>
         <td>8</td>
         <td>0</td>
         <td>8</td>
@@ -351,7 +351,7 @@
       <tr>
         <td class="strong"><a href="#88d46cf920582297284aecd6368315cdf9656189" class="src_link" title="app/controllers/redirect_controller.rb">app/controllers/redirect_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>14</td>
+        <td>11</td>
         <td>8</td>
         <td>0</td>
         <td>8</td>
@@ -2566,79 +2566,61 @@
           <code class="ruby">class RedirectController &lt; ApplicationController</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="2">
-          
-          
-          <code class="ruby">    def index</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
-          
-          <code class="ruby">      shortened_url = params[:shortened_url]</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="4">
-          
-          
-          <code class="ruby">       @user = ShortUrl.find_by(shortened_url: shortened_url)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
-          
-          <code class="ruby">       @rec = @user.id</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
-          
-          <code class="ruby">        redirect_to controller: &#39;home&#39;, action: &#39;show&#39; </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">      # if short_url_record</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">      #   redirect_to short_url_record.original_url</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">      # else</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">      #   render plain: &#39;Shortened URL not found&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">      # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="2">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">      shortened_url = params[:shortened_url]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">       @user = ShortUrl.find_by(shortened_url: shortened_url)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">       @rec = @user.original_url</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">        redirect_to controller: &#39;home&#39;, action: &#39;show&#39; </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
+        <li class="missed" data-hits="0" data-linenumber="11">
           
           
           <code class="ruby">  end</code>

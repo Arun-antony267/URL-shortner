@@ -289,16 +289,13 @@
       ],
       "/home/arun/URL-shortner/app/controllers/redirect_controller.rb": [
         0,
+        null,
+        0,
+        null,
         0,
         0,
         0,
         0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         0,
         0
@@ -574,7 +571,7 @@
         0
       ]
     },
-    "timestamp": 1701066734
+    "timestamp": 1701074026
   },
   "RSpec": {
     "coverage": {
