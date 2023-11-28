@@ -7,8 +7,8 @@ def index
 end
 
 def redirect_to_original
-  short_url = params[:short_url]
-  full_url = "https://test.tin.ee/"+short_url
+  short_url = params[:q]
+  full_url = "https://url-shortner-e2w9.onrender.com/i?q="+short_url
   user = ShortUrl.find_by(shortened_url: full_url )
   url_og = user.original_url
   redirect_to url_og, allow_other_host: true
@@ -105,8 +105,6 @@ end
            render 'new'
        
       end
-      flash[:message] = 'No More url'
-           render 'new'
     end
 
 
@@ -129,8 +127,8 @@ end
 
     
     def lookup_code
-      @display = "https://test.tin.ee/"
-      $string = SecureRandom.uuid[0..6]
+      @display = "https://url-shortner-e2w9.onrender.com/i?q="
+      $string = SecureRandom.uuid[0..3]
       $original_url = $original_url
       $shortened_url = @display+$string 
       @reply = 'Valid url'
