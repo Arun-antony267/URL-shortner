@@ -110,6 +110,8 @@ end
            render 'new'
        
       end
+      flash[:message] = 'No More url'
+           render 'new'
     end
 
 
