@@ -3,8 +3,22 @@ class HomeController < ApplicationController
 def index
 
   $short_count = ShortUrl.count 
+  # short_url = params[:short_url]
+  # full_url = "http://127.0.0.1:3000/"+short_url
+  # user = ShortUrl.find_by(shortened_url: full_url )
+  # url_og = user.original_url
+  # redirect_to url_og, allow_other_host: true
 
 end
+
+def redirect_to_original
+  short_url = params[:short_url]
+  full_url = "https://url-shortner-e2w9.onrender.com/short/?short_url="+short_url
+  user = ShortUrl.find_by(shortened_url: full_url )
+  url_og = user.original_url
+  redirect_to url_og, allow_other_host: true
+end
+
 
 
 def urlCount
@@ -118,7 +132,7 @@ end
 
     
     def lookup_code
-      @display = "https://test.tin.ee/"
+      @display = "https://url-shortner-e2w9.onrender.com/short/?short_url="
       $string = SecureRandom.uuid[0..6]
       $original_url = $original_url
       $shortened_url = @display+$string 

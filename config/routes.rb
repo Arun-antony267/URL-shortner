@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-    get 'home/index'
+    # get '/', to: 'home#index'
+    get '/short', to: 'home#redirect_to_original'
     root 'home#index'
     
     get 'home/new'
