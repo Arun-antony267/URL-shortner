@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-27T14:03:46+05:30">2023-11-27T14:03:46+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-28T10:22:24+05:30">2023-11-28T10:22:24+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>22</b> files in total.
-    <b>373</b> relevant lines. 
+    <b>379</b> relevant lines. 
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>373</b> lines missed </span>
+    <span class="red"><b>379</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -91,16 +91,6 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#88d46cf920582297284aecd6368315cdf9656189" class="src_link" title="app/controllers/redirect_controller.rb">app/controllers/redirect_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>11</td>
-        <td>8</td>
-        <td>0</td>
-        <td>8</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#f87dcb98268531e45b691a0c4ad35cb569cd98f0" class="src_link" title="app/controllers/registration_controller.rb">app/controllers/registration_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>21</td>
@@ -137,6 +127,16 @@
         <td>42</td>
         <td>0</td>
         <td>42</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#33583af40df866a821d747317c3f7449c252ef7d" class="src_link" title="app/controllers/webhook_controller.rb">app/controllers/webhook_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>25</td>
+        <td>14</td>
+        <td>0</td>
+        <td>14</td>
         <td>0.0</td>
       </tr>
       
@@ -290,9 +290,9 @@
   <a name="Controllers"></a>
   <div>
     <b>9</b> files in total.
-    <b>293</b> relevant lines. 
+    <b>299</b> relevant lines. 
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>293</b> lines missed </span>
+    <span class="red"><b>299</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -349,16 +349,6 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#88d46cf920582297284aecd6368315cdf9656189" class="src_link" title="app/controllers/redirect_controller.rb">app/controllers/redirect_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>11</td>
-        <td>8</td>
-        <td>0</td>
-        <td>8</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
         <td class="strong"><a href="#f87dcb98268531e45b691a0c4ad35cb569cd98f0" class="src_link" title="app/controllers/registration_controller.rb">app/controllers/registration_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>21</td>
@@ -395,6 +385,16 @@
         <td>42</td>
         <td>0</td>
         <td>42</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#33583af40df866a821d747317c3f7449c252ef7d" class="src_link" title="app/controllers/webhook_controller.rb">app/controllers/webhook_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>25</td>
+        <td>14</td>
+        <td>0</td>
+        <td>14</td>
         <td>0.0</td>
       </tr>
       
@@ -2546,91 +2546,6 @@
 </div>
 
       
-        <div class="source_table" id="88d46cf920582297284aecd6368315cdf9656189">
-  <div class="header">
-    <h3>app/controllers/redirect_controller.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="missed" data-hits="0" data-linenumber="1">
-          
-          
-          <code class="ruby">class RedirectController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
-          
-          <code class="ruby">    def index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">      </code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
-          
-          <code class="ruby">      shortened_url = params[:shortened_url]</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
-          
-          <code class="ruby">       @user = ShortUrl.find_by(shortened_url: shortened_url)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
-          
-          <code class="ruby">       @rec = @user.original_url</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
-          
-          <code class="ruby">        redirect_to controller: &#39;home&#39;, action: &#39;show&#39; </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="f87dcb98268531e45b691a0c4ad35cb569cd98f0">
   <div class="header">
     <h3>app/controllers/registration_controller.rb</h3>
@@ -3498,6 +3413,175 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="33583af40df866a821d747317c3f7449c252ef7d">
+  <div class="header">
+    <h3>app/controllers/webhook_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>14</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="missed" data-hits="0" data-linenumber="1">
+          
+          
+          <code class="ruby">class WebhookController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">      </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">      shortened_url = params[:shortened_url]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">       @user = ShortUrl.find_by(shortened_url: shortened_url)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">       @rec = @user.original_url</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">        redirect_to controller: &#39;home&#39;, action: &#39;show&#39; </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    def redirect</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">      # Retrieve the short URL parameter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">      # http://127.0.0.1:3000/redirect/?short_url=https://test.tin.ee/d1ff4ef</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">      # https://rails-test-deploy-url-shortner.onrender.com/redirect/?short_url=https://test.tin.ee/b5b2ab8</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">      short_url = params[:short_url]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">      user = ShortUrl.find_by(shortened_url: short_url )</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">      url_og = user.original_url</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">      # Your logic to handle the received short URL goes here</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">      # For demonstration purposes, let&#39;s just render it as JSON</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">      # render json: { received_short_url: url_og }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">      redirect_to url_og, allow_other_host: true</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
     </ol>

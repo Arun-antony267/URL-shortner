@@ -12,6 +12,7 @@ class WebhookController < ApplicationController
     def redirect
       # Retrieve the short URL parameter
       # http://127.0.0.1:3000/redirect/?short_url=https://test.tin.ee/d1ff4ef
+      # https://rails-test-deploy-url-shortner.onrender.com/redirect/?short_url=https://test.tin.ee/b5b2ab8
       short_url = params[:short_url]
       user = ShortUrl.find_by(shortened_url: short_url )
       url_og = user.original_url
