@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-28T14:12:03+05:30">2023-11-28T14:12:03+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-28T15:03:27+05:30">2023-11-28T15:03:27+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,10 +31,10 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>22</b> files in total.
-    <b>388</b> relevant lines. 
+    <b>21</b> files in total.
+    <b>372</b> relevant lines. 
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>388</b> lines missed </span>
+    <span class="red"><b>372</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -73,10 +73,10 @@
       <tr>
         <td class="strong"><a href="#fcf4700f4be8141f49839e6a58c037076ae687ee" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>174</td>
-        <td>119</td>
+        <td>172</td>
+        <td>117</td>
         <td>0</td>
-        <td>119</td>
+        <td>117</td>
         <td>0.0</td>
       </tr>
       
@@ -127,16 +127,6 @@
         <td>42</td>
         <td>0</td>
         <td>42</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#33583af40df866a821d747317c3f7449c252ef7d" class="src_link" title="app/controllers/webhook_controller.rb">app/controllers/webhook_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>25</td>
-        <td>14</td>
-        <td>0</td>
-        <td>14</td>
         <td>0.0</td>
       </tr>
       
@@ -289,10 +279,10 @@
   </h2>
   <a name="Controllers"></a>
   <div>
-    <b>9</b> files in total.
-    <b>308</b> relevant lines. 
+    <b>8</b> files in total.
+    <b>292</b> relevant lines. 
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>308</b> lines missed </span>
+    <span class="red"><b>292</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -331,10 +321,10 @@
       <tr>
         <td class="strong"><a href="#fcf4700f4be8141f49839e6a58c037076ae687ee" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>174</td>
-        <td>119</td>
+        <td>172</td>
+        <td>117</td>
         <td>0</td>
-        <td>119</td>
+        <td>117</td>
         <td>0.0</td>
       </tr>
       
@@ -385,16 +375,6 @@
         <td>42</td>
         <td>0</td>
         <td>42</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#33583af40df866a821d747317c3f7449c252ef7d" class="src_link" title="app/controllers/webhook_controller.rb">app/controllers/webhook_controller.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>25</td>
-        <td>14</td>
-        <td>0</td>
-        <td>14</td>
         <td>0.0</td>
       </tr>
       
@@ -1001,9 +981,9 @@
     <h3>app/controllers/home_controller.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
     <div>
-      <b>119</b> relevant lines. 
+      <b>117</b> relevant lines. 
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>119</b> lines missed.</span>
+      <span class="red"><b>117</b> lines missed.</span>
     </div>
   </div>
   
@@ -1067,13 +1047,13 @@
         <li class="missed" data-hits="0" data-linenumber="10">
           
           
-          <code class="ruby">  short_url = params[:short_url]</code>
+          <code class="ruby">  short_url = params[:q]</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="11">
           
           
-          <code class="ruby">  full_url = &quot;https://test.tin.ee/&quot;+short_url</code>
+          <code class="ruby">  full_url = &quot;https://url-shortner-e2w9.onrender.com/i?q=&quot;+short_url</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="12">
@@ -1655,19 +1635,19 @@
         <li class="missed" data-hits="0" data-linenumber="108">
           
           
-          <code class="ruby">      flash[:message] = &#39;No More url&#39;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="109">
-          
-          
-          <code class="ruby">           render &#39;new&#39;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="110">
-          
-          
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="111">
@@ -1679,85 +1659,85 @@
         <li class="never" data-hits="" data-linenumber="112">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="113">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="114">
-          
-          
           <code class="ruby"> </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="115">
+        <li class="missed" data-hits="0" data-linenumber="113">
           
           
           <code class="ruby">    def check_url</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="116">
+        <li class="missed" data-hits="0" data-linenumber="114">
           
           
           <code class="ruby">      require &#39;uri&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="117">
+        <li class="missed" data-hits="0" data-linenumber="115">
           
           
           <code class="ruby">      $original_url = params[:url]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="118">
+        <li class="never" data-hits="" data-linenumber="116">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="119">
+        <li class="missed" data-hits="0" data-linenumber="117">
           
           
           <code class="ruby">    if $original_url.present?</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="120">
+        <li class="missed" data-hits="0" data-linenumber="118">
           
           
           <code class="ruby">      if $original_url =~ /\A#{URI::regexp([ &#39;http&#39;, &#39;https&#39;])}\z/</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="121">
+        <li class="missed" data-hits="0" data-linenumber="119">
           
           
           <code class="ruby">        redirect_to :action =&gt; &#39;lookup_code&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="never" data-hits="" data-linenumber="120">
           
           
           <code class="ruby">      </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="123">
+        <li class="missed" data-hits="0" data-linenumber="121">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="124">
+        <li class="missed" data-hits="0" data-linenumber="122">
           
           
           <code class="ruby">      @reply = &#39;Invalid url&#39; </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="125">
+        <li class="missed" data-hits="0" data-linenumber="123">
           
           
           <code class="ruby">      render &#39;new&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="124">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="125">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="126">
@@ -1766,82 +1746,82 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="127">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="128">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="129">
+        <li class="never" data-hits="" data-linenumber="127">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="130">
+        <li class="never" data-hits="" data-linenumber="128">
           
           
           <code class="ruby">    </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="131">
+        <li class="missed" data-hits="0" data-linenumber="129">
           
           
           <code class="ruby">    def lookup_code</code>
         </li>
       
+        <li class="missed" data-hits="0" data-linenumber="130">
+          
+          
+          <code class="ruby">      @display = &quot;https://url-shortner-e2w9.onrender.com/i?q=&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="131">
+          
+          
+          <code class="ruby">      $string = SecureRandom.uuid[0..3]</code>
+        </li>
+      
         <li class="missed" data-hits="0" data-linenumber="132">
-          
-          
-          <code class="ruby">      @display = &quot;https://test.tin.ee/&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="133">
-          
-          
-          <code class="ruby">      $string = SecureRandom.uuid[0..6]</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="134">
           
           
           <code class="ruby">      $original_url = $original_url</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="135">
+        <li class="missed" data-hits="0" data-linenumber="133">
           
           
           <code class="ruby">      $shortened_url = @display+$string </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="136">
+        <li class="missed" data-hits="0" data-linenumber="134">
           
           
           <code class="ruby">      @reply = &#39;Valid url&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="137">
+        <li class="missed" data-hits="0" data-linenumber="135">
           
           
           <code class="ruby">      redirect_to :action =&gt; &#39;create&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="138">
+        <li class="never" data-hits="" data-linenumber="136">
           
           
           <code class="ruby">   </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="139">
+        <li class="missed" data-hits="0" data-linenumber="137">
           
           
           <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="139">
+          
+          
+          <code class="ruby">    def create</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="140">
@@ -1853,85 +1833,85 @@
         <li class="missed" data-hits="0" data-linenumber="141">
           
           
-          <code class="ruby">    def create</code>
+          <code class="ruby">      @Short_url = ShortUrl.new(original_url: $original_url, shortened_url: $shortened_url)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="142">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="143">
           
           
-          <code class="ruby">      @Short_url = ShortUrl.new(original_url: $original_url, shortened_url: $shortened_url)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="144">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="145">
-          
-          
           <code class="ruby">      if @Short_url.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="146">
+        <li class="missed" data-hits="0" data-linenumber="144">
           
           
           <code class="ruby">        @original_url = $original_url</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="147">
+        <li class="missed" data-hits="0" data-linenumber="145">
           
           
           <code class="ruby">        @shortened_url = $shortened_url</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="148">
+        <li class="missed" data-hits="0" data-linenumber="146">
           
           
           <code class="ruby">        flash[:message] = &quot;created succesfully.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="149">
+        <li class="missed" data-hits="0" data-linenumber="147">
           
           
           <code class="ruby">        render &#39;show&#39;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="150">
+        <li class="missed" data-hits="0" data-linenumber="148">
           
           
           <code class="ruby">      else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="151">
+        <li class="missed" data-hits="0" data-linenumber="149">
           
           
           <code class="ruby">        redirect_to root_path, notice: &quot;!!!!ERROR!!!!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="150">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="153">
+        <li class="missed" data-hits="0" data-linenumber="151">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="154">
+        <li class="never" data-hits="" data-linenumber="152">
           
           
           <code class="ruby">      </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="154">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="155">
@@ -1940,88 +1920,88 @@
           <code class="ruby">    </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="156">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="157">
+        <li class="never" data-hits="" data-linenumber="156">
           
           
           <code class="ruby">    </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="158">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="159">
+        <li class="missed" data-hits="0" data-linenumber="157">
           
           
           <code class="ruby">    def ogurl</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="160">
+        <li class="never" data-hits="" data-linenumber="158">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="161">
+        <li class="never" data-hits="" data-linenumber="159">
           
           
           <code class="ruby">      # @original_url = $original_url.to_json</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="162">
+        <li class="missed" data-hits="0" data-linenumber="160">
           
           
           <code class="ruby">      render json: $original_url.to_json</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="163">
+        <li class="never" data-hits="" data-linenumber="161">
           
           
           <code class="ruby">        </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="164">
+        <li class="missed" data-hits="0" data-linenumber="162">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="165">
+        <li class="never" data-hits="" data-linenumber="163">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="166">
+        <li class="missed" data-hits="0" data-linenumber="164">
           
           
           <code class="ruby">    def srtUrl</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="167">
+        <li class="never" data-hits="" data-linenumber="165">
           
           
           <code class="ruby">    </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="168">
+        <li class="never" data-hits="" data-linenumber="166">
           
           
           <code class="ruby">      # @shortened_url = $shortened_url.to_json</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="169">
+        <li class="missed" data-hits="0" data-linenumber="167">
           
           
           <code class="ruby">      render json: $shortened_url.to_json</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="168">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="169">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="170">
@@ -2030,25 +2010,13 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="171">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="172">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="173">
+        <li class="never" data-hits="" data-linenumber="171">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="174">
+        <li class="missed" data-hits="0" data-linenumber="172">
           
           
           <code class="ruby">end</code>
@@ -3479,175 +3447,6 @@
           
           
           <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="33583af40df866a821d747317c3f7449c252ef7d">
-  <div class="header">
-    <h3>app/controllers/webhook_controller.rb</h3>
-    <h4><span class="red">0.0 %</span> covered</h4>
-    <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="missed" data-hits="0" data-linenumber="1">
-          
-          
-          <code class="ruby">class WebhookController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
-          
-          <code class="ruby">    def index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">      </code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
-          
-          <code class="ruby">      shortened_url = params[:shortened_url]</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
-          
-          <code class="ruby">       @user = ShortUrl.find_by(shortened_url: shortened_url)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
-          
-          <code class="ruby">       @rec = @user.original_url</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
-          
-          <code class="ruby">        redirect_to controller: &#39;home&#39;, action: &#39;show&#39; </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
-          
-          <code class="ruby">    def redirect</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">      # Retrieve the short URL parameter</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">      # http://127.0.0.1:3000/redirect/?short_url=https://test.tin.ee/d1ff4ef</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">      # https://rails-test-deploy-url-shortner.onrender.com/redirect/?short_url=https://test.tin.ee/b5b2ab8</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
-          
-          <code class="ruby">      short_url = params[:short_url]</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
-          
-          <code class="ruby">      user = ShortUrl.find_by(shortened_url: short_url )</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">      url_og = user.original_url</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">      # Your logic to handle the received short URL goes here</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">      # For demonstration purposes, let&#39;s just render it as JSON</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">      # render json: { received_short_url: url_og }</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
-          
-          <code class="ruby">      redirect_to url_og, allow_other_host: true</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">    </code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
     </ol>
