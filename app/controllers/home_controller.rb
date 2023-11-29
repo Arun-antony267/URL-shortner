@@ -1,4 +1,5 @@
 class HomeController < ApplicationController 
+  require 'csv'
 
 def index
 
@@ -60,18 +61,35 @@ end
 def file 
 if params[:myFile].present?
   $file = params[:myFile]
-  if is_csv_file?( $file )
+  # if is_csv_file?( $file )
+  #   file_path = Rails.root.join('uploads', $file.original_filename)
+  #   File.open(file_path, 'wb') do |file|
+  #     file.write(uploaded_file.read)
+   
+  #     process_csv(file_path)
+  
+  #   render 'new'
+  # end
   redirect_to controller: :pdf, action: :uploadFile
-else
-  flash[:message] = 'Invalid File'
-  render 'new'
-end
+# else
+#   flash[:message] = 'Invalid File'
+#   render 'new'
+# end
 else
   flash[:message] = 'Invalid File'
   render 'new'
 end
 end
 
+# def process_csv(file_path)
+#   # Read and process the CSV file using the CSV class
+#   CSV.foreach(file_path, headers: true) do |row|
+#     # Your logic to process each row
+#     # For example: Save data to the database
+#     @f_url = column1: row['column1']
+#     # YourModel.create(column1: row['column1'], column2: row['column2'])
+#   end
+# end
 
 
   def multi_line

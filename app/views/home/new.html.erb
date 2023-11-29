@@ -12,10 +12,10 @@
       <div class= "p-3">
     <br><p>File Upload</p>
 
-   <form action="file">
+   <%= form_tag :action => 'file' do %> 
      <input type="file" id="myFile" name="myFile">
      <p><button type="submit" class= "signupbtn" >Upload</button>
-  </form>
+    <% end %> 
   </div>
-
+<%= @f_url  %>
   </body>
