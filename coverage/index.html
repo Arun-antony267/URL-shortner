@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-29T11:09:31+05:30">2023-11-29T11:09:31+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-29T22:15:32+05:30">2023-11-29T22:15:32+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -243,7 +243,7 @@
       <tr>
         <td class="strong"><a href="#dc5a07e5d342412b0acb32178f38c766edd0186c" class="src_link" title="app/pdfs/short_url_pdf.rb">app/pdfs/short_url_pdf.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>15</td>
+        <td>16</td>
         <td>13</td>
         <td>0</td>
         <td>13</td>
@@ -750,7 +750,7 @@
       <tr>
         <td class="strong"><a href="#dc5a07e5d342412b0acb32178f38c766edd0186c" class="src_link" title="app/pdfs/short_url_pdf.rb">app/pdfs/short_url_pdf.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>15</td>
+        <td>16</td>
         <td>13</td>
         <td>0</td>
         <td>13</td>
@@ -4229,40 +4229,40 @@
           <code class="ruby">class ShortUrlPdf &lt; Prawn::Document</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="2">
           
           
-          <code class="ruby">    def initialize(short_url)</code>
+          <code class="ruby">    </code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="3">
           
           
-          <code class="ruby">    super()</code>
+          <code class="ruby">    def initialize(short_url)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="4">
           
           
-          <code class="ruby">    @short_url = ShortUrl.order(&quot;id ASC&quot;).all</code>
+          <code class="ruby">    super()</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="5">
           
           
-          <code class="ruby">    table short_url_all</code>
+          <code class="ruby">    @short_url = ShortUrl.order(&quot;id ASC&quot;).all</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="6">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">    table short_url_all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="missed" data-hits="0" data-linenumber="7">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -4271,34 +4271,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    def short_url_all</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="10">
           
           
-          <code class="ruby">    [[&quot;id&quot;,&quot;Original url&quot;,&quot;Shortened url&quot;]]</code>
+          <code class="ruby">    def short_url_all</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="11">
           
           
-          <code class="ruby">    @short_url.map do |short_url|</code>
+          <code class="ruby">    [[&quot;id&quot;,&quot;Original url&quot;,&quot;Shortened url&quot;]]</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="12">
           
           
-          <code class="ruby">        [short_url.original_url,short_url.shortened_url]</code>
+          <code class="ruby">    @short_url.map do |short_url|</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        [short_url.id,short_url.original_url,short_url.shortened_url]</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="14">
@@ -4308,6 +4308,12 @@
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
           
           
           <code class="ruby">end</code>

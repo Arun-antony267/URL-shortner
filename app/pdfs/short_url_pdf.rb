@@ -1,4 +1,5 @@
 class ShortUrlPdf < Prawn::Document
+    
     def initialize(short_url)
     super()
     @short_url = ShortUrl.order("id ASC").all
