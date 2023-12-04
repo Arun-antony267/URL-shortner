@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_28_164425) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_01_152422) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -54,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_28_164425) do
     t.string "shortened_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "shortened_urls", force: :cascade do |t|
@@ -79,11 +80,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_28_164425) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "url_files", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "attachment"
+  end
+
   create_table "urls", force: :cascade do |t|
     t.string "lookup_code", null: false
     t.string "orginal_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "User_id"
   end
 
   create_table "users", force: :cascade do |t|

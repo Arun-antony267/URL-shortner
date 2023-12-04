@@ -43,6 +43,7 @@ pass = params[:password]
 
 if @user && @user.authenticate(pass)
   $name =@user.name
+  $id = @user.id
    flash[:message] = "Logged In Succesfully"
   redirect_to controller: :home, action: :index
 else
