@@ -28,6 +28,10 @@
     "build:css": "yarn build:css:compile && yarn build:css:prefix",
     "rails css:build": "rails css:build"
   },
+  "browserslist": [
+    "defaults"
+    
+  ],
   "devDependencies": {
     "@babel/core": "7.0.0",
     "@babel/plugin-proposal-private-property-in-object":"7.21.11",

@@ -2,17 +2,11 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'production'
 
 const environment = require('./environment')
 
-module.exports = environment.toWebpackConfig()
-
 module.exports = {
-    
-    // Other webpack configurations...
+    entry: './app/javascript/packs/application.js',
     node: {
-      __dirname: false,
+      global: false,
       __filename: false,
-      global: true,
+      __dirname: false,
     },
-  
-    // Other webpack configurations...
-  };
-  
+  }
