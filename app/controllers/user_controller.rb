@@ -20,21 +20,19 @@ class UserController < ApplicationController
 
 
 
+ def create
 
-  def create
+  @user = User.new(user_params)
 
-    @user = User.new(user_params)
-  
-    if @user.save
-      flash[:message] = "Your Account was Created Successfully"
-      render 'login'
-    else 
-      flash[:message] = 'ERROR !!! Invalid input'
-     
-        render :signup
-    end
+  if @user.save
+    flash[:message] = "Your Account was Created Successfully"
+    render 'login'
+  else 
+    flash[:message] = 'ERROR !!! Invalid input'
+   
+      render :signup
   end
-
+end
 
 def check_login
 email = params[:email]

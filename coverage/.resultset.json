@@ -1,7 +1,7 @@
 {
   "Unknown Test Framework": {
     "coverage": {
-      "/home/arun/URL-shortner/app/controllers/application_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/application_controller.rb": [
         0,
         0,
         0,
@@ -10,7 +10,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/concerns/current_user_concern.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/concerns/current_user_concern.rb": [
         0,
         0,
         null,
@@ -31,7 +31,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/home_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/home_controller.rb": [
         0,
         null,
         0,
@@ -192,33 +192,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/pdf_controller.rb": [
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
+      "/home/arun/Desktop/url_shortner/app/controllers/pdf_controller.rb": [
         0,
         0,
         null,
@@ -233,6 +207,46 @@
         0,
         0,
         null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
         null,
         null,
         0,
@@ -279,11 +293,32 @@
         null,
         0,
         null,
+        0,
+        null,
+        0,
+        0,
+        0,
         null,
         0,
         null
       ],
-      "/home/arun/URL-shortner/app/controllers/registration_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/redirect_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/controllers/registration_controller.rb": [
         0,
         null,
         0,
@@ -306,7 +341,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/sessions_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/sessions_controller.rb": [
         0,
         null,
         null,
@@ -350,7 +385,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/url_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/url_controller.rb": [
         0,
         null,
         null,
@@ -362,7 +397,7 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/controllers/user_controller.rb": [
+      "/home/arun/Desktop/url_shortner/app/controllers/user_controller.rb": [
         0,
         null,
         0,
@@ -385,7 +420,6 @@
         null,
         null,
         null,
-        null,
         0,
         null,
         0,
@@ -399,7 +433,6 @@
         0,
         0,
         0,
-        null,
         null,
         0,
         0,
@@ -427,102 +460,70 @@
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/helpers/application_helper.rb": [
+      "/home/arun/Desktop/url_shortner/app/helpers/application_helper.rb": [
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/helpers/registration_helper.rb": [
+      "/home/arun/Desktop/url_shortner/app/helpers/registration_helper.rb": [
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/helpers/sessions_helper.rb": [
+      "/home/arun/Desktop/url_shortner/app/helpers/sessions_helper.rb": [
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/helpers/user_helper.rb": [
+      "/home/arun/Desktop/url_shortner/app/helpers/user_helper.rb": [
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/jobs/application_job.rb": [
+      "/home/arun/Desktop/url_shortner/app/jobs/application_job.rb": [
         0,
         null,
         null,
         null,
-        null,
-        null,
-        0
-      ],
-      "/home/arun/URL-shortner/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/arun/URL-shortner/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/home/arun/URL-shortner/app/models/data_file.rb": [
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        0,
         null,
         null,
         0
       ],
-      "/home/arun/URL-shortner/app/models/short_url.rb": [
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0
-      ],
-      "/home/arun/URL-shortner/app/models/url.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
+      "/home/arun/Desktop/url_shortner/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/models/user.rb": [
+      "/home/arun/Desktop/url_shortner/app/models/application_record.rb": [
         0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/pdfs/short_url_pdf.rb": [
+      "/home/arun/Desktop/url_shortner/app/models/data_file.rb": [
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/models/short_url.rb": [
         0,
         null,
         0,
@@ -531,6 +532,13 @@
         0,
         0,
         null,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/models/url.rb": [
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -540,7 +548,43 @@
         0,
         0
       ],
-      "/home/arun/URL-shortner/app/pdfs/users_pdf.rb": [
+      "/home/arun/Desktop/url_shortner/app/models/url_file.rb": [
+        0,
+        0,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/models/user.rb": [
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/pdfs/short_url_pdf.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/arun/Desktop/url_shortner/app/pdfs/users_pdf.rb": [
         0,
         0,
         0,
@@ -558,91 +602,6 @@
         0
       ]
     },
-    "timestamp": 1701675541
-  },
-  "RSpec": {
-    "coverage": {
-      "/home/arun/URL-shortner/spec/support/factory_bot.rb": [
-        null,
-        null,
-        null
-      ],
-      "/home/arun/URL-shortner/spec/helpers/user_helper_spec.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/arun/URL-shortner/app/models/user.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/arun/URL-shortner/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ]
-    },
-    "timestamp": 1700905525
+    "timestamp": 1701683006
   }
 }

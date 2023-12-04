@@ -18,7 +18,7 @@ function MyComponent(){
   return(
       <div className='p'>
         <div className='box box-outline '>
-        <p> The Number Of URL's Shortened is :{data}</p>
+        <p> The Number Of URL's Shortened is : {data}</p>
         </div>
       </div>
   )
