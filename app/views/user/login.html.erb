@@ -1,8 +1,7 @@
  <div id="content"></div> 
   <%= render "layouts/flash"%>
-   
-   <div class="block">
-
+    <%# <div id="login"></div> %>
+  <div class="block">
    </div>
   <div class= "block-2">
  <div class= "login-container">
@@ -25,14 +24,15 @@
           <% end%>
           </div>
           </div> 
-          <script>
-function myFunction() {
-  var x = document.getElementById("password");
+           <script>
+ function myFunction() { 
+ var x = document.getElementById("password"); 
 
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
+   if (x.type === "password") { 
+     x.type = "text"; 
+   } else {
     x.type = "password";
-  }
-}
-</script>
+  } 
+ } 
+ </script> 
+        

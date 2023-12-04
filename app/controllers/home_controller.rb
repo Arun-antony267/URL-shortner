@@ -1,11 +1,11 @@
 class HomeController < ApplicationController 
   require 'csv'
 
-def index
-
-  $short_count = ShortUrl.count 
-
-end
+  def index
+    user= ShortUrl.where(user_id: $id).count
+    $short_count = user
+  
+  end
 
 def redirect_to_original
   short_url = params[:q]
