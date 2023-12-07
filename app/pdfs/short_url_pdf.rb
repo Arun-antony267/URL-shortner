@@ -1,10 +1,8 @@
 class ShortUrlPdf < Prawn::Document
     def initialize(short_url)
     super()
-    # @short_url = ShortUrl.order("id ASC").all
     @short_url = short_url
     puts(@short_url)
-    # table short_url_all
     generate_pdf
     end
 
